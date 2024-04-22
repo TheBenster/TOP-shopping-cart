@@ -9,14 +9,12 @@ const Hero = () => {
         <div id="side-text" className="mt-20 w-3/5 mr-20 font-modern">
           <p className=" text-4xl">
             {" "}
-            No one understands greatness until they can see it with their eyes,
-            and these colors are so great you don't even need to see them.
+            Get <span className=" font-bold text-sky-900">25%</span> off your first order when you sign up <span className=" font-bold text-sky-900">TODAY</span>
           </p>
           <br />
           <br />
           <p className="text-4xl">
-            With these colors, you can go to places you've never been able to
-            with free-to-use and unlicensed colors.
+            Hex is a brand that cares about you. Our products are ethically sourced, and like bitcoin, can be tracked through each and every vendor. To learn more, click below.
           </p>
           <br />
           <br />
