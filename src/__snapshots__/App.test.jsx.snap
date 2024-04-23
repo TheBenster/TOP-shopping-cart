@@ -1,0 +1,134 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`test test > matches snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="w-full pl-8 pt-4 flex justify-between  align-start"
+      >
+        <div
+          class="content-center"
+        >
+          Logo goes here
+        </div>
+        <div
+          class="pr-8 flex gap-3 "
+          id="nav-links"
+        >
+          <a
+            class="text-xl content-center text-gray-900 hover:text-sky-950"
+            href=""
+          >
+            Home
+          </a>
+          <a
+            class="text-xl content-center text-gray-900 hover:text-sky-950"
+            href=""
+          >
+            Shop
+          </a>
+          <div
+            class="w-12 content-center h-12 object-center"
+            id="cart"
+          >
+            <img
+              alt=""
+              src="/src/assets/cart.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="w-full pl-8 pt-4 flex justify-between  align-start"
+    >
+      <div
+        class="content-center"
+      >
+        Logo goes here
+      </div>
+      <div
+        class="pr-8 flex gap-3 "
+        id="nav-links"
+      >
+        <a
+          class="text-xl content-center text-gray-900 hover:text-sky-950"
+          href=""
+        >
+          Home
+        </a>
+        <a
+          class="text-xl content-center text-gray-900 hover:text-sky-950"
+          href=""
+        >
+          Shop
+        </a>
+        <div
+          class="w-12 content-center h-12 object-center"
+          id="cart"
+        >
+          <img
+            alt=""
+            src="/src/assets/cart.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
