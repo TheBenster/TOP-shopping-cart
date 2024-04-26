@@ -3,12 +3,13 @@ import CategoryBar from '../components/CategoryBar';
 import ShopLayout from '../components/ShopLayout';
 import Shop from '../components/Shop';
 import HeroHome from '../components/HeroHome';
-import Root from '../components/Root'; // New component for the layout
+import Root from '../components/Root';
+import Product from '../components/Product';
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Root />, // Use the Root component as the root element
+        element: <Root />, 
         children: [
             {
                 index: true,
@@ -20,7 +21,8 @@ const router = createBrowserRouter([
                 children: [
                     {
                         index: true,
-                        element: <Shop />
+                        path: 'shop:productId',
+                        element: <Product />
                     }
                 ]
             }
