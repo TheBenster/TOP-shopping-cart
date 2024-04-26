@@ -8,7 +8,7 @@ const CategoryBar = () => {
     return (
         <div className=" flex justify-between border-t-2 border-b-2 p-3">
             <hr className=" " />
-            {categories.map((category) => <p className=" hover:text-sky-900 hover:cursor-pointer">{category}</p>)}
+            {categories.map((category) => <p key={category.id} className=" hover:text-sky-900 hover:cursor-pointer">{category}</p>)}
             <hr/>
         </div>
     )
