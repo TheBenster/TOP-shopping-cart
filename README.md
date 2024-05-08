@@ -1,6 +1,6 @@
 # TOP Shopping Cart Project
 
-This is a shopping cart application built as part of The Odin Project's curriculum. it features a fully functional shopping cart with product listings, cart management, and checkout functionality.
+This is a shopping cart application built as part of The Odin Project's curriculum. It features a fully functional shopping cart with product listings, cart management, and checkout functionality.
 
 ## Technologies Used
 
