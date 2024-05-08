@@ -9,6 +9,7 @@ const ShopLayout =  ({newFilter}) => {
     const shopURL = 'https://fakestoreapi.com/products';
     const productJSON = useFetch(shopURL)
     const [selectedFilters, setSelectedFilters] = useState([]);
+   
 
     const handleFilters = () =>{
       setSelectedFilters(selectedFilters);
@@ -29,7 +30,7 @@ const ShopLayout =  ({newFilter}) => {
         <>
             <CategoryBar />
             <div id="products" className="p-10 flex flex-wrap justify-center gap-10">
-                {productJSON.data.map((product) => <ProductCard key={product.id} title={product.title} image={product.image} productId={product.id} price={product.price} description={product.description}/>)}
+                {productJSON.data.map((product) => <ProductCard  key={product.id} title={product.title} image={product.image} productId={product.id} price={product.price} description={product.description}/>)}
             </div>
         </>
     )
