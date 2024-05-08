@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Navbar from './Navbar';
 import { Outlet } from 'react-router-dom';
 import { useState } from 'react';
+import Footer from './Footer';
 
 // This will contain the navbar under every circumstance. Everything else is an outlet, and thus context.
 const Root = () => {
@@ -11,8 +12,9 @@ const Root = () => {
 
     return (
         <>
-            <Navbar  />
+            <Navbar shoppingCart={shoppingCart} />
             <Outlet context={{shoppingCart, setShoppingCart, quantity, setQuantity}} />
+            <Footer />
         </>
     );
 };
