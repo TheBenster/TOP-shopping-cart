@@ -1,6 +1,6 @@
 # TOP Shopping Cart Project
 
-This is a shopping cart application built as part of The Odin Project's curriculum. It is a work in progress and will eventually feature a fully functional shopping cart with product listings, cart management, and checkout functionality.
+This is a shopping cart application built as part of The Odin Project's curriculum. it features a fully functional shopping cart with product listings, cart management, and checkout functionality.
 
 ## Technologies Used
 
@@ -10,13 +10,16 @@ This is a shopping cart application built as part of The Odin Project's curricul
 - Testing Library for React
 - External API (details to be added later)
 
+## Site URL
+Deployed on Netlify, you can check it out here: https://superlative-llama-24aba1.netlify.app/
+
 ## Features
 
-- Browse and search for products
+- Browse and search for products, filter for specific categories.
 - Add products to the shopping cart
 - Update quantities and remove items from the cart
-- Proceed to checkout (functionality to be added)
-- Integration with a third-party API for product data (details to be added later)
+- Proceed to checkout
+- Integration with a third-party API for product data (fakestore API)
 
 ## Getting Started
 
