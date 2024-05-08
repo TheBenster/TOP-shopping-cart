@@ -47,10 +47,11 @@ This project uses the Testing Library for React to write and run tests. To run t
 
 `npm test`
 
-Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
-License
+## What I've Learned
+ - Tailwind is actually a lot of fun to work with, and not as bulky as once thought.
+ - I've gotten a better understanding of the workarounds of state management, especially when passing data between components that weren't explicitly coded (routes/links)
+ - Overall I've learned a lot about **React** and the environment and mentality you have to use.
+This was a good project and I'm grateful for the odin project for their open source info.
 
 This project is licensed under the MIT License.
 
