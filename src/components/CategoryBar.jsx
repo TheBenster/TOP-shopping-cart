@@ -17,20 +17,24 @@ const CategoryBar = ({ onCategoryClick }) => {
     };
 
     return (
-        <div className=" flex justify-between border-t-2 border-b-2 p-3">
-            <hr className=" " />
-            {categories.map((category) => (
-                <p
-                    onClick={() => handleClick(category)}
-                    key={category}
-                    className={`hover:text-sky-900  hover:cursor-pointer ${
-                        selectedCategory === category ? "text-sky-900 font-bold" : ""
-                    }`}
-                >
-                    {category}
-                </p>
-            ))}
-            <hr />
+        <div className="sticky top-20 z-40 bg-white/95 backdrop-blur-md shadow-md border-b border-gray-200">
+            <div className="max-w-7xl mx-auto px-8 py-6">
+                <div className="flex flex-wrap justify-center gap-4">
+                    {categories.map((category) => (
+                        <button
+                            onClick={() => handleClick(category)}
+                            key={category}
+                            className={`px-6 py-3 rounded-full font-semibold capitalize transition-all duration-300 transform hover:scale-105 ${
+                                selectedCategory === category
+                                    ? "bg-gradient-to-r from-sky-600 to-blue-600 text-white shadow-lg"
+                                    : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-sky-600"
+                            }`}
+                        >
+                            {category}
+                        </button>
+                    ))}
+                </div>
+            </div>
         </div>
     );
 };

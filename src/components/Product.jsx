@@ -56,32 +56,71 @@ const Product = ({}) => {
 
 
     return(
-        <div >
-            <div id='go-back' >
-                <img src={goBack} onClick={() => navigate('/shop')} className='h-8 pl-9 hover:cursor-pointer' alt="" />
+        <div className='min-h-screen bg-gradient-to-br from-slate-50 to-slate-100'>
+            <div id='go-back' className='pt-6 pb-4'>
+                <button
+                    onClick={() => navigate('/shop')}
+                    className='flex items-center gap-2 ml-9 px-4 py-2 text-gray-700 hover:text-sky-600 transition-colors duration-200 group'
+                >
+                    <img src={goBack} className='h-5 group-hover:-translate-x-1 transition-transform duration-200' alt="Go back to shop" />
+                    <span className='font-medium'>Back to Shop</span>
+                </button>
             </div>
-            <div id='productInfo' className=' flex mt-36 mr-96 m-72 gap-14'>
-            <div className=' flex flex-col gap-8 h-96'>
-                <p className=' text-lg'>{product.description}</p>
-                <div id='cart-amount' className='flex gap-6 items-center'>
-                <p className=' text-xl font-bold'>${product.price}</p>
-                <button onClick={() => handleAddToCart(product, quantity)} className='bg-sky-600 text-white w-40 rounded-lg hover:bg-sky-800 border-0 duration-300'>Add to cart</button>
-                    
-                    <div id='AhH' className='h-10 flex justify-between rounded-lg w-40 bg-slate-300'>
-                        <button onClick={decrement} className='flex justify-center items-center bg-slate-200 w-10 h-10 font-bold text-lg  rounded-none  rounded-l-md' >-</button>
-                            <p className='content-center'>{quantity}</p>
-                        <button onClick={increment} className='flex justify-center items-center bg-slate-200 w-10 h-10 font-bold text-lg rounded-none rounded-r-md' >+</button>                   
+
+            <div className='max-w-7xl mx-auto px-8 py-12'>
+                <div className='bg-white rounded-2xl shadow-2xl overflow-hidden'>
+                    <div className='grid md:grid-cols-2 gap-12 p-12'>
+                        {/* Product Image Section */}
+                        <div className='flex items-center justify-center bg-gradient-to-br from-slate-50 to-white p-12 rounded-xl'>
+                            <img
+                                className='w-full max-w-md h-auto object-contain transform hover:scale-105 transition-transform duration-300'
+                                src={product.image}
+                                alt={product.title}
+                            />
+                        </div>
+
+                        {/* Product Details Section */}
+                        <div className='flex flex-col justify-center gap-8'>
+                            <div>
+                                <h1 className='text-4xl font-bold text-gray-900 mb-4 leading-tight'>{product.title}</h1>
+                                <p className='text-lg text-gray-600 leading-relaxed'>{product.description}</p>
+                            </div>
+
+                            <div className='border-t border-b border-gray-200 py-6'>
+                                <p className='text-5xl font-bold text-sky-600'>${product.price}</p>
+                            </div>
+
+                            <div className='flex flex-col sm:flex-row gap-4 items-start sm:items-center'>
+                                <div className='flex flex-col gap-2'>
+                                    <label className='text-sm font-semibold text-gray-700 uppercase tracking-wide'>Quantity</label>
+                                    <div id='quantity-control' className='h-12 flex justify-between rounded-lg w-40 bg-white border-2 border-gray-300 shadow-sm'>
+                                        <button
+                                            onClick={decrement}
+                                            className='flex justify-center items-center bg-gray-50 w-12 h-full font-bold text-xl rounded-l-md hover:bg-gray-100 active:bg-gray-200 transition-colors duration-150'
+                                        >
+                                            -
+                                        </button>
+                                        <p className='content-center px-4 font-semibold text-lg'>{quantity}</p>
+                                        <button
+                                            onClick={increment}
+                                            className='flex justify-center items-center bg-gray-50 w-12 h-full font-bold text-xl rounded-r-md hover:bg-gray-100 active:bg-gray-200 transition-colors duration-150'
+                                        >
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button
+                                    onClick={() => handleAddToCart(product, quantity)}
+                                    className='mt-auto px-8 py-4 bg-gradient-to-r from-sky-600 to-sky-700 text-white font-semibold rounded-lg hover:from-sky-700 hover:to-sky-800 transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl transition-all duration-200'
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
             </div>
-            <div id='vertical-data' className="flex flex-col h-4/5 justify-end items-end gap-14 ">
-                    <img className=' w-60 h-60' src={product.image} alt="" />
-                    <h2 className=' text-2xl font-bold w-72'>{product.title}</h2>
-                </div>
-            </div>
-            
-            
         </div>
     )
 }
